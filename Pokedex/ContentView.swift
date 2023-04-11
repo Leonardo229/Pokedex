@@ -6,16 +6,25 @@
 //
 
 import SwiftUI
+import Utils
+import Navigation
+import PokemonList
 
 struct ContentView: View {
+    
+    
+    @Inject var navigationModule: NavigationManager
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        NavigationView{
+            
+            NavigationLink(isActive: navigationModule.navigationBinding(route: .PokemonList), destination:{ PokemonListEntryView()}, label: {EmptyView()})
+            
+            
+        }.navigationBarHidden(true)
+        .environment(\.colorScheme, .light)
+
     }
 }
 

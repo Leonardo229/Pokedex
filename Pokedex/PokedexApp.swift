@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import Utils
+import DI
 
 @main
 struct PokedexApp: App {
+    init() {
+        InjectFeature.injectFeture()
+        ModulesManager.insertFature(feature: .Global)
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
