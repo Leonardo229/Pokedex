@@ -64,6 +64,8 @@ struct PokemonListView: View {
                 viewModel.getPokemonList()
             }
             .animation(.easeInOut, value: viewModel.isLoading)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255).ignoresSafeArea())
             
             
         }

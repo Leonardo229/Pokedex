@@ -23,12 +23,10 @@ struct PokemonCard: View {
                         Text("#\(String(format: "%03d",pokemon.pokedexNumber))")
                             .font(Font.system(size: 16))
                             .fontWeight(.black)
-                            .foregroundColor(.white.opacity(0.9))
                         Spacer()
                         Text(pokemon.name.firstUppercased)
                             .font(Font.system(size: 24))
                             .fontWeight(.black)
-                            .foregroundColor(.white)
                         
                         Spacer()
                         
@@ -38,16 +36,19 @@ struct PokemonCard: View {
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .frame(height: 104)
-                .background(pokemon.mainColor)
+                .foregroundColor(pokemon.mainColor)
+                .background(Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255))
                 .cornerRadius(16)
-                .shadow(color: .black.opacity(0.25), radius: 1, y: 4)
+                .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+                .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
                 .padding(.horizontal)
                 
                 
                 AsyncImage(url: URL(string: pokemon.getMainImageURL()), scale: 2) { image in
                     image
                         .resizable()
-                        .shadow(color: .black.opacity(0.4), radius: 1.5, y: 4)
+                        .shadow(color: Color.black.opacity(0.2), radius: 5, x: 5, y: 5)
+                        .shadow(color: Color.white.opacity(0.7), radius: 5, x: -2.5, y: -2.5)
                         .offset(y: -28)
                     
                 } placeholder: {
