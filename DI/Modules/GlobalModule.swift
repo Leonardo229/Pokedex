@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Navigation
+import AppNavigation
 import Utils
 
 

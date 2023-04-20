@@ -23,10 +23,13 @@ struct PokemonCard: View {
                         Text("#\(String(format: "%03d",pokemon.pokedexNumber))")
                             .font(Font.system(size: 16))
                             .fontWeight(.black)
+                            .shadow(color: Color.black.opacity(0.2), radius: 10, x: -5, y: -5)
+                                   .shadow(color: Color.white.opacity(0.7), radius: 10, x: 10, y: 10)
                         Spacer()
                         Text(pokemon.name.firstUppercased)
                             .font(Font.system(size: 24))
                             .fontWeight(.black)
+                            .shadow(color: Color.black.opacity(0.2), radius: 2, x: 0.5, y: 0.5)
                         
                         Spacer()
                         

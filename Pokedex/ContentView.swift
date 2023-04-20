@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Utils
-import Navigation
+import AppNavigation
 import PokemonList
 
 struct ContentView: View {

@@ -23,8 +23,8 @@
 		9D42F005296F282500D7EA87 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42EFFE296F282500D7EA87 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D42F014296F286C00D7EA87 /* DI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42F00E296F286C00D7EA87 /* DI.framework */; };
 		9D42F015296F286C00D7EA87 /* DI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42F00E296F286C00D7EA87 /* DI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9D42F024296F288300D7EA87 /* Navigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42F01E296F288300D7EA87 /* Navigation.framework */; };
-		9D42F025296F288300D7EA87 /* Navigation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42F01E296F288300D7EA87 /* Navigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D42F024296F288300D7EA87 /* AppNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42F01E296F288300D7EA87 /* AppNavigation.framework */; };
+		9D42F025296F288300D7EA87 /* AppNavigation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42F01E296F288300D7EA87 /* AppNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D42F034296F28A100D7EA87 /* PokemonList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42F02E296F28A100D7EA87 /* PokemonList.framework */; };
 		9D42F035296F28A100D7EA87 /* PokemonList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42F02E296F28A100D7EA87 /* PokemonList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D42F03F296F293300D7EA87 /* PokemonListEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D42F03E296F293300D7EA87 /* PokemonListEntryView.swift */; };
@@ -36,8 +36,8 @@
 		9D42F051296F2BCC00D7EA87 /* GlobalModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D42F050296F2BCC00D7EA87 /* GlobalModule.swift */; };
 		9D42F052296F2C2D00D7EA87 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42EFEE296F280D00D7EA87 /* Utils.framework */; };
 		9D42F053296F2C2D00D7EA87 /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42EFEE296F280D00D7EA87 /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9D42F057296F2C3500D7EA87 /* Navigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42F01E296F288300D7EA87 /* Navigation.framework */; };
-		9D42F058296F2C3600D7EA87 /* Navigation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42F01E296F288300D7EA87 /* Navigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D42F057296F2C3500D7EA87 /* AppNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42F01E296F288300D7EA87 /* AppNavigation.framework */; };
+		9D42F058296F2C3600D7EA87 /* AppNavigation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D42F01E296F288300D7EA87 /* AppNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D42F05D296F2C8C00D7EA87 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D42F05C296F2C8C00D7EA87 /* Module.swift */; };
 		9D42F05F296F2CF200D7EA87 /* InjectModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D42F05E296F2CF200D7EA87 /* InjectModule.swift */; };
 		9D42F061296F2D2200D7EA87 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D42F060296F2D2200D7EA87 /* Injector.swift */; };
@@ -210,7 +210,7 @@
 				9D42F035296F28A100D7EA87 /* PokemonList.framework in Embed Frameworks */,
 				9D42F015296F286C00D7EA87 /* DI.framework in Embed Frameworks */,
 				9D42EFE5296F27F100D7EA87 /* Data.framework in Embed Frameworks */,
-				9D42F025296F288300D7EA87 /* Navigation.framework in Embed Frameworks */,
+				9D42F025296F288300D7EA87 /* AppNavigation.framework in Embed Frameworks */,
 				9D42EFF5296F280D00D7EA87 /* Utils.framework in Embed Frameworks */,
 				9D42F005296F282500D7EA87 /* UI.framework in Embed Frameworks */,
 				9D42EFD4296F27CC00D7EA87 /* Domain.framework in Embed Frameworks */,
@@ -237,7 +237,7 @@
 			files = (
 				9D42F09A296F53A000D7EA87 /* Data.framework in Embed Frameworks */,
 				9D42F096296F539B00D7EA87 /* Domain.framework in Embed Frameworks */,
-				9D42F058296F2C3600D7EA87 /* Navigation.framework in Embed Frameworks */,
+				9D42F058296F2C3600D7EA87 /* AppNavigation.framework in Embed Frameworks */,
 				9D42F053296F2C2D00D7EA87 /* Utils.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -293,7 +293,7 @@
 		9D42EFFE296F282500D7EA87 /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D42F000296F282500D7EA87 /* UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UI.h; sourceTree = "<group>"; };
 		9D42F00E296F286C00D7EA87 /* DI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D42F01E296F288300D7EA87 /* Navigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Navigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D42F01E296F288300D7EA87 /* AppNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D42F02E296F28A100D7EA87 /* PokemonList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PokemonList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D42F03E296F293300D7EA87 /* PokemonListEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListEntryView.swift; sourceTree = "<group>"; };
 		9D42F041296F2A4500D7EA87 /* NavigationRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoutes.swift; sourceTree = "<group>"; };
@@ -333,7 +333,7 @@
 				9D42F073296F4D0600D7EA87 /* Alamofire in Frameworks */,
 				9D42F014296F286C00D7EA87 /* DI.framework in Frameworks */,
 				9D42EFE4296F27F100D7EA87 /* Data.framework in Frameworks */,
-				9D42F024296F288300D7EA87 /* Navigation.framework in Frameworks */,
+				9D42F024296F288300D7EA87 /* AppNavigation.framework in Frameworks */,
 				9D42EFF4296F280D00D7EA87 /* Utils.framework in Frameworks */,
 				9D42F004296F282500D7EA87 /* UI.framework in Frameworks */,
 				9D42EFD3296F27CC00D7EA87 /* Domain.framework in Frameworks */,
@@ -378,7 +378,7 @@
 			files = (
 				9D42F099296F53A000D7EA87 /* Data.framework in Frameworks */,
 				9D42F095296F539A00D7EA87 /* Domain.framework in Frameworks */,
-				9D42F057296F2C3500D7EA87 /* Navigation.framework in Frameworks */,
+				9D42F057296F2C3500D7EA87 /* AppNavigation.framework in Frameworks */,
 				9D42F052296F2C2D00D7EA87 /* Utils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,7 +411,7 @@
 				9D42EFDF296F27F100D7EA87 /* Data */,
 				9D42EFCE296F27CC00D7EA87 /* Domain */,
 				9D42F00F296F286C00D7EA87 /* DI */,
-				9D42F01F296F288300D7EA87 /* Navigation */,
+				9D42F01F296F288300D7EA87 /* AppNavigation */,
 				9D42EFC6296F278000D7EA87 /* Features */,
 				9D42EFB3296F271600D7EA87 /* Products */,
 				9D42F045296F2A9F00D7EA87 /* Frameworks */,
@@ -427,7 +427,7 @@
 				9D42EFEE296F280D00D7EA87 /* Utils.framework */,
 				9D42EFFE296F282500D7EA87 /* UI.framework */,
 				9D42F00E296F286C00D7EA87 /* DI.framework */,
-				9D42F01E296F288300D7EA87 /* Navigation.framework */,
+				9D42F01E296F288300D7EA87 /* AppNavigation.framework */,
 				9D42F02E296F28A100D7EA87 /* PokemonList.framework */,
 			);
 			name = Products;
@@ -518,12 +518,12 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
-		9D42F01F296F288300D7EA87 /* Navigation */ = {
+		9D42F01F296F288300D7EA87 /* AppNavigation */ = {
 			isa = PBXGroup;
 			children = (
 				9D42F043296F2A6200D7EA87 /* NavigationManager.swift */,
 			);
-			path = Navigation;
+			path = AppNavigation;
 			sourceTree = "<group>";
 		};
 		9D42F02F296F28A100D7EA87 /* PokedexList */ = {
@@ -885,9 +885,9 @@
 			productReference = 9D42F00E296F286C00D7EA87 /* DI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9D42F01D296F288300D7EA87 /* Navigation */ = {
+		9D42F01D296F288300D7EA87 /* AppNavigation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D42F026296F288300D7EA87 /* Build configuration list for PBXNativeTarget "Navigation" */;
+			buildConfigurationList = 9D42F026296F288300D7EA87 /* Build configuration list for PBXNativeTarget "AppNavigation" */;
 			buildPhases = (
 				9D42F019296F288300D7EA87 /* Headers */,
 				9D42F01A296F288300D7EA87 /* Sources */,
@@ -900,9 +900,9 @@
 			dependencies = (
 				9D42F049296F2A9F00D7EA87 /* PBXTargetDependency */,
 			);
-			name = Navigation;
+			name = AppNavigation;
 			productName = Navigation;
-			productReference = 9D42F01E296F288300D7EA87 /* Navigation.framework */;
+			productReference = 9D42F01E296F288300D7EA87 /* AppNavigation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9D42F02D296F28A100D7EA87 /* PokemonList */ = {
@@ -990,7 +990,7 @@
 				9D42EFED296F280D00D7EA87 /* Utils */,
 				9D42EFFD296F282500D7EA87 /* UI */,
 				9D42F00D296F286C00D7EA87 /* DI */,
-				9D42F01D296F288300D7EA87 /* Navigation */,
+				9D42F01D296F288300D7EA87 /* AppNavigation */,
 				9D42F02D296F28A100D7EA87 /* PokemonList */,
 			);
 		};
@@ -1174,7 +1174,7 @@
 		};
 		9D42F023296F288300D7EA87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D42F01D296F288300D7EA87 /* Navigation */;
+			target = 9D42F01D296F288300D7EA87 /* AppNavigation */;
 			targetProxy = 9D42F022296F288300D7EA87 /* PBXContainerItemProxy */;
 		};
 		9D42F033296F28A100D7EA87 /* PBXTargetDependency */ = {
@@ -1194,7 +1194,7 @@
 		};
 		9D42F05A296F2C3600D7EA87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D42F01D296F288300D7EA87 /* Navigation */;
+			target = 9D42F01D296F288300D7EA87 /* AppNavigation */;
 			targetProxy = 9D42F059296F2C3600D7EA87 /* PBXContainerItemProxy */;
 		};
 		9D42F079296F4E0700D7EA87 /* PBXTargetDependency */ = {
@@ -1915,7 +1915,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D42F026296F288300D7EA87 /* Build configuration list for PBXNativeTarget "Navigation" */ = {
+		9D42F026296F288300D7EA87 /* Build configuration list for PBXNativeTarget "AppNavigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D42F027296F288300D7EA87 /* Debug */,
